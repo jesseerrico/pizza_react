@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import People from './components/people'
 import Consumptions from './components/consumptions';
+import MonthStats from './components/monthStats';
 
 const App = () => {
   
@@ -34,11 +35,12 @@ useEffect(() => {
     <div className="App">
       <header className="App-header">
         <p>
-          Content will go here.
+          Pizza Analytics Dashboard
         </p>
       </header>
       <People people={people} peopleUrl={peopleUrl} getPeople={getPeople}/>
       <Consumptions people={people}/>
+      <MonthStats />
     </div>
   );
 }
