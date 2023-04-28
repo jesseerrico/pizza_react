@@ -1,6 +1,7 @@
 import './App.css';
+import People from './components/people'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -8,6 +9,7 @@ function App() {
           Content will go here.
         </p>
       </header>
+      <People />
     </div>
   );
 }
