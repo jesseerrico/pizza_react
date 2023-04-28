@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import './App.css';
 import People from './components/people'
+import Consumptions from './components/consumptions';
 
 const App = () => {
   
@@ -37,6 +38,7 @@ useEffect(() => {
         </p>
       </header>
       <People people={people} peopleUrl={peopleUrl} getPeople={getPeople}/>
+      <Consumptions people={people}/>
     </div>
   );
 }

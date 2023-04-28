@@ -22,7 +22,7 @@ const People = (props) => {
 
     return (
         <>
-            Current people on file:
+            <h1>People</h1>
             <div className="lineItem">
                 {props.people.map(person => <div className="lineItem">{person}</div>)}
             </div>
