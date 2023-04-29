@@ -21,7 +21,7 @@ const MonthStats = () => {
     }
 
     const getMonthStats = () => {
-        if(isNumeric(month) && parseInt(month) < 12) {
+        if(isNumeric(month) && parseInt(month) <= 12) {
             axios.get(findStreaksUrl)
                 .then(response => {
                     const data = response.data;
